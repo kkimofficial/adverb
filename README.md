@@ -1,6 +1,10 @@
-# magrittp: very basic attempt to provide pipe functionality similar to magrittr library from R
+# magrittp: pipe operator
 
 DISCLAIMER: THIS WORK IS NOT NECESSARILY A REPRESENTATION OF ANY PAST OR CURRENT EMPLOYER OF MINE
+
+## Introduction
+
+It is a very basic attempt to provide pipe functionality similar to magrittr library from R
 
 ## Examples
 
