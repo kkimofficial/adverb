@@ -10,5 +10,5 @@ import operator
 from magrittp import Magrittp
 
 f = Magrittp
-f(2) >> f(operator.pow, f, 3) >> f(print)
+f(2) >> f(operator.pow, 3) >> f(print)
 ```
