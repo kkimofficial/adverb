@@ -4,7 +4,7 @@ DISCLAIMER: THIS WORK IS NOT NECESSARILY A REPRESENTATION OF ANY PAST OR CURRENT
 
 ## Introduction
 
-It is a very basic attempt to provide pipe functionality similar to magrittr library from R
+It is a very basic attempt to provide pipe functionality similar to R magrittr library and it's %>% operator
 
 ## Examples
 
