@@ -21,7 +21,7 @@ It is a very basic attempt to provide pipe functionality similar to R magrittr l
 8
 ```
 
-#### In some cases piped object is not the first argument in the list
+#### In some cases piped object is not the first argument in the list, so Magrittp object can be used as an indicator of argument position
 ```python
 >>> import operator
 >>> f = Magrittp
