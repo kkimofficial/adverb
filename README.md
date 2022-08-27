@@ -9,7 +9,7 @@ DISCLAIMER: THIS WORK IS NOT NECESSARILY A REPRESENTATION OF ANY PAST OR CURRENT
 >>> from magrittp import Magrittp
 ```
 
-### Basic case
+#### Piped object passed as a first argument to a function by default
 ```python
 >>> import operator
 >>> f = Magrittp
@@ -17,7 +17,7 @@ DISCLAIMER: THIS WORK IS NOT NECESSARILY A REPRESENTATION OF ANY PAST OR CURRENT
 8
 ```
 
-### Positioned arguments
+#### In some cases piped object is not the first argument in the list
 ```python
 >>> import operator
 >>> f = Magrittp
