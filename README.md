@@ -4,9 +4,10 @@ DISCLAIMER: THIS WORK IS NOT NECESSARILY A REPRESENTATION OF ANY PAST OR CURRENT
 
 ## 1) Examples
 
-### Feature Transformation
+###
 ```python
 import operator
+from magrittp import Magrittp
 
 f = Magrittp
 f(2) >> f(operator.pow, f, 3) >> f(print)
