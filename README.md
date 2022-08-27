@@ -2,10 +2,12 @@
 
 DISCLAIMER: THIS WORK IS NOT NECESSARILY A REPRESENTATION OF ANY PAST OR CURRENT EMPLOYER OF MINE
 
-## 3) Examples
+## 1) Examples
 
 ### Feature Transformation
-```q
-.statq.feature
-```
+```python
+import operator
 
+f = Magrittp
+f(2) >> f(operator.pow, f, 3) >> f(print)
+```
