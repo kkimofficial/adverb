@@ -6,9 +6,9 @@ DISCLAIMER: THIS WORK IS NOT NECESSARILY A REPRESENTATION OF ANY PAST OR CURRENT
 
 ###
 ```python
-import operator
-from magrittp import Magrittp
-
-f = Magrittp
-f(2) >> f(operator.pow, 3) >> f(print)
+>>> from magrittp import Magrittp
+>>> import operator
+>>> f = Magrittp
+>>> f(2) >> f(operator.pow, 3) >> f(print)
+8
 ```
