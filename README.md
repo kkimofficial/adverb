@@ -36,3 +36,10 @@ In order to "unwrap" object the chain must be closed with Adverb object
 >>> print(result)
 9
 ```
+
+Example with filtering list
+```python
+>>> f = Adverb
+>>> f([1, 2, 3]) >> f(filter, lambda x: x > 1, f) >> f(list) >> f(print)
+[2, 3]
+```
