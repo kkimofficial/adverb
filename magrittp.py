@@ -1,7 +1,7 @@
 class Magrittp:
 
     def __init__(self, f, *args, **kwargs):
-        self.f = Magrittp.f(f, *args, **kwargs) if callable(f) else f
+        self.f = Magrittp.enlist(f, *args, **kwargs) if callable(f) else f
 
     def __rshift__(self, other):
         return Magrittp(other.f(self.f)) if other != Magrittp else self.f
@@ -10,5 +10,5 @@ class Magrittp:
         return str(self.f)
 
     @staticmethod
-    def f(f, *args, **kwargs):
+    def enlist(f, *args, **kwargs):
         return lambda x: f(*(tuple([x if i == Magrittp else i for i in args]) if (Magrittp in args) else (x,) + args))
