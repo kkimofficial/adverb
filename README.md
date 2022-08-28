@@ -28,3 +28,11 @@ In some cases piped object is not the first argument in the list, so Magrittp ob
 >>> f(2) >> f(lambda x, y: x ** y, 3, f) >> f(print)
 9
 ```
+
+In order to "unwrap" object the chain must be closed with Magrittp object
+```python
+>>> f = Magrittp
+>>> result = f(2) >> f(lambda x, y: x ** y, 3, f) >> f
+>>> print(result)
+9
+```
