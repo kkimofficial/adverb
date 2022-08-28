@@ -10,5 +10,5 @@ class Magrittp:
         return str(self.f)
 
     @staticmethod
-    def f(*args):
+    def f(f, *args, **kwargs):
         return lambda x: f(*(tuple([x if i == Magrittp else i for i in args]) if (Magrittp in args) else (x,) + args))
