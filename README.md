@@ -37,9 +37,14 @@ In order to "unwrap" object the chain must be closed with Adverb object
 9
 ```
 
-Example with filtering a list
+Example with filter and map (where filter and map are standard Python functions) applied to an array
 ```python
 >>> f = Adverb
->>> f([1, 2, 3]) >> f(filter, lambda x: x > 1, f) >> f(list) >> f(print)
-[2, 3]
+>>> f([1, 2, 3]) >> f(filter, lambda x: x > 1, f) >> f(map, lambda x: x ** 2, f) >> f(list) >> f(print)
+[4, 9]
+```
+The above is equalent to in terms of standard function notation
+```python
+>>> print(list(map(lambda x: x ** 2, filter(lambda x: x > 1, [1, 2, 3]))))
+[4, 9]
 ```
