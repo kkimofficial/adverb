@@ -8,9 +8,7 @@ It is a very basic attempt to provide pipe functionality similar to R magrittr l
 
 ## Overview
 
-`x %>% f`
-
-## Examples
+`x >> f`
 
 Import
 ```python
