@@ -44,25 +44,23 @@ Import
 0.25
 ```
 
-
 - In order to "unwrap" object and get the final value the chain must be closed with Adverb class object
 ```python
->>> result = p(-2) >> p(pow, 2, p) >> p
+>>> result = p(-2) >> p(pow, 2) >> p
 >>> print(result)
-9
+4
 ```
 
+- Pipes can be combined with + operator. Effectively it is a way of creating complex lambda functions
+```python
+>>> sequence = p(pow, 2) + p(print)
+>>> p(-2) >> sequence
+4
+```
 
-
-
-Example with filter and map (where filter and map are standard Python functions) applied to array
+- More complex example with filter and map (where filter and map are standard Python functions) applied to array
 ```python
 >>> foo = p(filter, lambda x: x > 1, p) + p(map, lambda x: x ** 2, p) + p(list) + p(print)
 >>> p([1, 2, 3]) >> foo
-[4, 9]
-```
-The above is equalent in terms of standard function notation
-```python
->>> print(list(map(lambda x: x ** 2, filter(lambda x: x > 1, [1, 2, 3]))))
 [4, 9]
 ```
