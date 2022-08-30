@@ -37,7 +37,12 @@ Import
 4
 ```
 
+- `p(x) >> p(f, y, p)` is equalent to `f(y, x)`
 
+```python
+>>> p(-2) >> p(pow, 2, p) >> p(print)
+0.25
+```
 
 
 In some cases piped object is not the first argument in the list, so Adverb object can be used as an indicator of argument position
