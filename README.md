@@ -60,7 +60,7 @@ Import
 
 - More complex example with filter and map (where filter and map are standard Python functions) applied to array
 ```python
->>> foo = p(filter, lambda x: x > 1, p) + p(map, lambda x: x ** 2, p) + p(list) + p(print)
->>> p([1, 2, 3]) >> foo
+>>> sequence = p(filter, lambda x: x > 1, p) + p(map, lambda x: x ** 2, p) + p(list) + p(print)
+>>> p([1, 2, 3]) >> sequence
 [4, 9]
 ```
