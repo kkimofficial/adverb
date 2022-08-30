@@ -57,12 +57,8 @@ Import
 
 Example with filter and map (where filter and map are standard Python functions) applied to array
 ```python
->>> f = Adverb
->>> f([1, 2, 3]) >>\
-      f(filter, lambda x: x > 1, f) >>\
-      f(map, lambda x: x ** 2, f) >>\
-      f(list) >>\
-      f(print)
+>>> foo = p(filter, lambda x: x > 1, p) + p(map, lambda x: x ** 2, p) + p(list) + p(print)
+>>> p([1, 2, 3]) >> foo
 [4, 9]
 ```
 The above is equalent in terms of standard function notation
