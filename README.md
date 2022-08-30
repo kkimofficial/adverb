@@ -19,6 +19,7 @@ Import
 - `p(x) >> p(f)` is equalent to `f(x)`
 
 ```python
+>>> # print(-2)
 >>> p(-2) >> p(print)
 -2
 ```
