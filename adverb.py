@@ -11,7 +11,7 @@ class Adverb:
 
     def __add__(self, other):
         if other == Adverb:
-            result = Adverb(self.x)
+            result = Adverb(self.f)
             result.unwrap = True
             return result
         return Adverb(lambda x: other.f(self.f(x)))
