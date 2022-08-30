@@ -19,16 +19,26 @@ Import
 - `p(x) >> p(f)` is equalent to `f(x)`
 
 ```python
->>> p(2) >> p(print)
+>>> p(-2) >> p(print)
+-2
+```
+
+- `p(x) >> p(f) >> p(g)` is equalent to `g(f(x))`
+
+```python
+>>> p(-2) >> p(abs) >> p(print)
 2
 ```
 
-Piped object passed as a first argument to a function by default
+- `p(x) >> p(f, y)` is equalent to `f(x, y)`
+
 ```python
->>> p = Adverb
->>> p(2) >> p(lambda x, y: x ** y, 3) >> p(print)
-8
+>>> p(-2) >> p(pow, 2) >> p(print)
+4
 ```
+
+
+
 
 In some cases piped object is not the first argument in the list, so Adverb object can be used as an indicator of argument position
 ```python
