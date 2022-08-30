@@ -45,20 +45,15 @@ Import
 ```
 
 
-In some cases piped object is not the first argument in the list, so Adverb object can be used as an indicator of argument position
+- In order to "unwrap" object the chain must be closed with Adverb class object
 ```python
->>> f = Adverb
->>> f(2) >> f(lambda x, y: x ** y, 3, f) >> f(print)
-9
-```
-
-In order to "unwrap" object the chain must be closed with Adverb object
-```python
->>> f = Adverb
->>> result = f(2) >> f(lambda x, y: x ** y, 3, f) >> f
+>>> result = p(-2) >> p(pow, 2, p) >> p
 >>> print(result)
 9
 ```
+
+
+
 
 Example with filter and map (where filter and map are standard Python functions) applied to array
 ```python
