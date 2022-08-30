@@ -5,9 +5,12 @@ class Adverb:
         self.unwrap = False
 
     def __rshift__(self, other):
-        if other.unwrap:
+        if other == Adverb:
+            return self.f
+        elif other.unwrap:
             return other.f(self.f)
-        return Adverb(other.f(self.f)) if other != Adverb else self.f
+        else:
+            return Adverb(other.f(self.f))
 
     def __add__(self, other):
         if other == Adverb:
