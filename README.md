@@ -6,19 +6,27 @@ DISCLAIMER: THIS WORK IS NOT NECESSARILY A REPRESENTATION OF ANY PAST OR CURRENT
 
 It is a very basic attempt to provide pipe functionality similar to R magrittr library and it's %>% operator
 
-## Overview
-
-`x >> f`
+## Installation
 
 Import
 ```python
 >>> from adverb import Adverb
+>>> p = Adverb
+```
+
+## Overview
+
+- `p(x) >> p(f)` is equalent to `f(x)`
+
+```python
+>>> p(2) >> p(print)
+2
 ```
 
 Piped object passed as a first argument to a function by default
 ```python
->>> f = Adverb
->>> f(2) >> f(lambda x, y: x ** y, 3) >> f(print)
+>>> p = Adverb
+>>> p(2) >> p(lambda x, y: x ** y, 3) >> p(print)
 8
 ```
 
