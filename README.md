@@ -37,7 +37,7 @@ Import
 4
 ```
 
-- `p(x) >> p(f, y, p)` is equalent to `f(y, x)`. When piped object needs to be passed explicitly (for example when it needs to be somewhere other than the first argument in the list), then Adverb class objet can be used as a placeholder
+- `p(x) >> p(f, y, p)` is equalent to `f(y, x)`. When piped object needs to be passed explicitly (for example, when it needs to be somewhere other than the first argument in the list), then Adverb class objet can be used as a placeholder
 
 ```python
 >>> p(-2) >> p(pow, 2, p) >> p(print) # print(pow(2, -2))
