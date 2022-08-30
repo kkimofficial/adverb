@@ -19,29 +19,28 @@ Import
 - `p(x) >> p(f)` is equalent to `f(x)`
 
 ```python
->>> # print(-2)
->>> p(-2) >> p(print)
+>>> p(-2) >> p(print) # print(-2)
 -2
 ```
 
 - `p(x) >> p(f) >> p(g)` is equalent to `g(f(x))`
 
 ```python
->>> p(-2) >> p(abs) >> p(print)
+>>> p(-2) >> p(abs) >> p(print) # print(abs(-2))
 2
 ```
 
 - `p(x) >> p(f, y)` is equalent to `f(x, y)`
 
 ```python
->>> p(-2) >> p(pow, 2) >> p(print)
+>>> p(-2) >> p(pow, 2) >> p(print) # print(pow(-2, 2))
 4
 ```
 
 - `p(x) >> p(f, y, p)` is equalent to `f(y, x)`
 
 ```python
->>> p(-2) >> p(pow, 2, p) >> p(print)
+>>> p(-2) >> p(pow, 2, p) >> p(print) # print(pow(2, -2))
 0.25
 ```
 
