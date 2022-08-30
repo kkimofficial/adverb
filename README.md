@@ -4,7 +4,7 @@ DISCLAIMER: THIS WORK IS NOT NECESSARILY A REPRESENTATION OF ANY PAST OR CURRENT
 
 ## Introduction
 
-It is a very basic attempt to provide pipe functionality similar to R magrittr library and it's %>% operator
+It is a very basic attempt to provide pipe functionality similar to R magrittr library and it's %>% operator. I believe chaining significantly improves code readability in cases when there are a lot of nested brackets.
 
 ## Installation
 
