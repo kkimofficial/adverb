@@ -45,7 +45,7 @@ Import
 ```
 
 
-- In order to "unwrap" object the chain must be closed with Adverb class object
+- In order to "unwrap" object and get the final value the chain must be closed with Adverb class object
 ```python
 >>> result = p(-2) >> p(pow, 2, p) >> p
 >>> print(result)
